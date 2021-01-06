@@ -4,6 +4,7 @@
 sgv::ResizeHandler::ResizeHandler(SignalerGraphicsView& a_view)
 	: m_view(a_view)
 {
+	setParent(&m_view);
 }
 
 void sgv::ResizeHandler::mousePressEvent(const QMouseEvent* a_event)

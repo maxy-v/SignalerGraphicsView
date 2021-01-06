@@ -5,8 +5,9 @@
 
 namespace sgv
 {
-	class CreateHandler
+	class CreateHandler: public QObject
 	{
+		Q_OBJECT
 	public:
 		CreateHandler(class SignalerGraphicsView& a_view);
 

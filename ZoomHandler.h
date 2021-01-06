@@ -5,8 +5,9 @@
 
 namespace sgv
 {
-	class ZoomHandler
+	class ZoomHandler: public QObject
 	{
+		Q_OBJECT
 	public:
 		ZoomHandler(class SignalerGraphicsView& a_view);
 

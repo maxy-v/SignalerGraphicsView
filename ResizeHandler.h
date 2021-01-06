@@ -6,8 +6,9 @@
 
 namespace sgv
 {
-	class ResizeHandler
+	class ResizeHandler: public QObject
 	{
+		Q_OBJECT
 	public:
 		ResizeHandler(class SignalerGraphicsView& a_view);
 

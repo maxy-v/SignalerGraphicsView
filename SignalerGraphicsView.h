@@ -35,9 +35,9 @@ namespace sgv
 		virtual void wheelEvent       (QWheelEvent* a_event) override;
 
 	private:
-		QScopedPointer<class CreateHandler> m_create_handler;
-		QScopedPointer<class DeleteHandler> m_delete_handler;
-		QScopedPointer<class ResizeHandler> m_resize_handler;
-		QScopedPointer<class ZoomHandler  > m_zoom_handler;
+		class CreateHandler* m_create_handler;
+		class DeleteHandler* m_delete_handler;
+		class ResizeHandler* m_resize_handler;
+		class ZoomHandler  * m_zoom_handler;
 	};
 }

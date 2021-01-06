@@ -4,6 +4,7 @@
 sgv::ZoomHandler::ZoomHandler(SignalerGraphicsView& a_view)
 	: m_view(a_view)
 {
+	setParent(&m_view);
 }
 
 void sgv::ZoomHandler::wheelEvent(const QWheelEvent* a_event)

@@ -4,6 +4,7 @@
 sgv::DeleteHandler::DeleteHandler(SignalerGraphicsView& a_view)
 	: m_view(a_view)
 {
+	setParent(&m_view);
 }
 
 void sgv::DeleteHandler::mousePressEvent(const QMouseEvent* a_event)

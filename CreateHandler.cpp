@@ -4,6 +4,7 @@
 sgv::CreateHandler::CreateHandler(SignalerGraphicsView& a_view)
 	: m_view(a_view)
 {
+	setParent(&m_view);
 }
 
 void sgv::CreateHandler::mousePressEvent(const QMouseEvent* a_event)

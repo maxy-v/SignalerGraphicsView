@@ -4,8 +4,9 @@
 
 namespace sgv
 {
-	class DeleteHandler
+	class DeleteHandler: public QObject
 	{
+		Q_OBJECT
 	public:
 		DeleteHandler(class SignalerGraphicsView& a_view);
 
